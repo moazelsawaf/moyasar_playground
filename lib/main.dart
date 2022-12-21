@@ -51,10 +51,10 @@ class MyApp extends StatelessWidget {
   }
 
   Future<void> _applePay() async {
-    var items = <String, double>{'Item 1': 20.0, 'Item 2': 80.0};
+    var items = <String, double>{'Item 1': 1.0};
 
     final res = await MoyasarPayment().applePay(
-      amount: 100.0,
+      amount: 1.0,
       publishableKey: 'pk_test_PcfsWh5PodJAfGTwr7aXgY53bCmdhutLwBMMeJwM',
       applepayMerchantId: 'merchant.net.smartangle.arto',
       paymentItems: items,
